@@ -1,0 +1,6 @@
+- https://spark.apache.org
+- https://databricks.com/session/optimizing-apache-spark-sql-joins
+- https://github.com/jaceklaskowski
+- https://pypi.org/project/pytest-spark/
+- https://henning.kropponline.de/2016/09/17/running-pyspark-with-virtualenv/
+- https://www.inovex.de/blog/247-spark-streaming-on-yarn-in-production/
