@@ -4,6 +4,7 @@ SPARK_VERSION=2.4.0
 
 spark-shell \
     --master local[*] \
+    --driver-memory 4G \
     --conf "spark.driver.extraJavaOptions=-Dlog4j.configuration=file:conf/log4j.properties" \
     --conf "spark.executor.extraJavaOptions=-Dlog4j.configuration=file:conf/log4j.properties" \
 	--conf spark.driver.extraJavaOptions="-Dscala.color" \
