@@ -57,3 +57,8 @@ import org.apache.spark.sql.expressions.Window
 val window = Window.partitionBy("continent").orderBy("country")
 val windowed = df.select(col("*"), row_number().over(window).alias("rn"), sum("population").over(window).alias("population_sum"))
 windowed.show
+
+
+val city_udf = udf { (name: String) => "I love " + name }
+
+windowed.withColumn("attitude", city_udf('name)).show
