@@ -24,7 +24,6 @@ batch_from_kafka = spark \
   .format("kafka") \
   .option("kafka.bootstrap.servers", "localhost:9092") \
   .option("subscribe", "test_topic") \
-  .option("checkpointLocation", "checkpoint/task3-kafka") \
   .load()
 
 
