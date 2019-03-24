@@ -14,5 +14,6 @@ spark-shell \
     --conf spark.es.nodes=127.0.0.1 \
     --conf spark.es.port=9200 \
     --conf spark.es.nodes.wan.only=true \
+    --conf spark.sql.crossJoin.enabled=true \
     --packages com.datastax.spark:spark-cassandra-connector_2.11:$SPARK_VERSION,org.elasticsearch:elasticsearch-spark-20_2.11:6.6.0 \
 
